@@ -82,6 +82,12 @@ a {
 }
 
 /* Base styles */
+.skip-to-main-content {
+  position: absolute;
+  left: -5000px;
+  opacity: 0;
+}
+
 html {
   scroll-behavior: smooth;
 }
