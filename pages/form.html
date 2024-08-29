@@ -8,16 +8,9 @@
     <title>Form</title>
   </head>
   <body>
-    <h1>Click 'Continue as a guest'</h1>
-    <a
-      href="https://sul-devs.github.io/prioritasker/app/screens/add-a-task.html"
-      class="btn continue-as-guest-btn"
-      >Continue as guest</a
-    >
-    <br />
-    <!-- Alternative signup -->
-    <p class="or">Or</p>
+    <h1>Sign Up or Continue as a guest</h1>
     <!-- Registration/Login Form -->
+    <section class="form">
     <form id="signup-form" action="/users.html" method="post">
       <ul class="form-fields">
         <!-- Username field -->
@@ -25,7 +18,7 @@
           <label for="username"
             >Name &nbsp;&nbsp;&nbsp;
             <span class="required-tag" aria-label="required"
-              >*Required</span
+            >*Required</span
             ></label
           >
           <input
@@ -33,31 +26,31 @@
             type="text"
             placeholder="e.g. Bob Builder"
             name="user-name"
-          />
-        </li>
+            />
+          </li>
 
-        <!-- Email field -->
-        <li class="form-field email-field">
-          <label for="email"
+          <!-- Email field -->
+          <li class="form-field email-field">
+            <label for="email"
             >Email &nbsp;&nbsp;&nbsp;<span
-              class="optional-tag"
-              aria-label="optional"
-              >*Optional</span
+            class="optional-tag"
+            aria-label="optional"
+            >*Optional</span
             ></label
-          >
-          <input
+            >
+            <input
             id="email"
             type="text"
             placeholder="e.g. bob@example.com"
             name="user-email"
-          />
-        </li>
+            />
+          </li>
 
-        <!-- Password field -->
-        <li class="form-field password-field">
+          <!-- Password field -->
+          <li class="form-field password-field">
           <label for="password"
             >Password &nbsp;&nbsp;&nbsp;<span
-              class="required-tag"
+            class="required-tag"
               aria-label="required"
               >*Required</span
             ></label
@@ -67,24 +60,32 @@
             type="text"
             placeholder="Create a password"
             name="user-password"
-          />
-        </li>
+            />
+          </li>
 
-        <!-- Sign up button -->
-        <li class="signup">
+          <!-- Sign up button -->
+          <li class="signup">
           <button
             id="signup-btn"
             class="btn"
             type="submit"
             name="signup-button"
           >
-            Sign Up
-          </button>
-        </li>
-      </ul>
-      <!-- <button type="button">Google</button>
-      <button type="button">IG</button>
-      <button type="button">TW</button> -->
-    </form>
-  </body>
+          Sign Up
+        </button>
+      </li>
+      <li>
+        <a
+      href="https://sul-devs.github.io/prioritasker/app/screens/add-a-task.html"
+      class="btn continue-as-guest-btn"
+      >Or continue as guest</a
+    >
+      </li>
+    </ul>
+  </section>
+    <!-- <button type="button">Google</button>
+    <button type="button">IG</button>
+    <button type="button">TW</button> -->
+  </form>
+</body>
 </html>
